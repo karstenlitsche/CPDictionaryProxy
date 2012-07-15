@@ -16,6 +16,8 @@
 		0A33859E15B0D0A2007B702E /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A33859D15B0D0A2007B702E /* CPViewController.m */; };
 		0A3385A115B0D0A2007B702E /* CPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A33859F15B0D0A2007B702E /* CPViewController_iPhone.xib */; };
 		0A3385A415B0D0A2007B702E /* CPViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3385A215B0D0A2007B702E /* CPViewController_iPad.xib */; };
+		0A5B6EA515B3216600B86B0D /* ExamplePlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B6EA415B3216600B86B0D /* ExamplePlist.plist */; };
+		0A5B6EA815B321B100B86B0D /* CPDictionaryProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B6EA715B321B100B86B0D /* CPDictionaryProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,9 @@
 		0A33859D15B0D0A2007B702E /* CPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPViewController.m; sourceTree = "<group>"; };
 		0A3385A015B0D0A2007B702E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPViewController_iPhone.xib; sourceTree = "<group>"; };
 		0A3385A315B0D0A2007B702E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPViewController_iPad.xib; sourceTree = "<group>"; };
+		0A5B6EA415B3216600B86B0D /* ExamplePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExamplePlist.plist; sourceTree = "<group>"; };
+		0A5B6EA615B321B100B86B0D /* CPDictionaryProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDictionaryProxy.h; sourceTree = "<group>"; };
+		0A5B6EA715B321B100B86B0D /* CPDictionaryProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDictionaryProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,8 @@
 		0A33857B15B0D0A2007B702E = {
 			isa = PBXGroup;
 			children = (
+				0A3385AA15B0D6E8007B702E /* CPDictionaryProxy */,
+				0A5B6EA315B3216600B86B0D /* CPExamplePlist */,
 				0A33859015B0D0A2007B702E /* CPDictionaryProxyExample */,
 				0A33858915B0D0A2007B702E /* Frameworks */,
 				0A33858715B0D0A2007B702E /* Products */,
@@ -99,6 +106,23 @@
 				0A33859815B0D0A2007B702E /* CPDictionaryProxyExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A3385AA15B0D6E8007B702E /* CPDictionaryProxy */ = {
+			isa = PBXGroup;
+			children = (
+				0A5B6EA615B321B100B86B0D /* CPDictionaryProxy.h */,
+				0A5B6EA715B321B100B86B0D /* CPDictionaryProxy.m */,
+			);
+			path = CPDictionaryProxy;
+			sourceTree = "<group>";
+		};
+		0A5B6EA315B3216600B86B0D /* CPExamplePlist */ = {
+			isa = PBXGroup;
+			children = (
+				0A5B6EA415B3216600B86B0D /* ExamplePlist.plist */,
+			);
+			path = CPExamplePlist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +180,7 @@
 				0A33859515B0D0A2007B702E /* InfoPlist.strings in Resources */,
 				0A3385A115B0D0A2007B702E /* CPViewController_iPhone.xib in Resources */,
 				0A3385A415B0D0A2007B702E /* CPViewController_iPad.xib in Resources */,
+				0A5B6EA515B3216600B86B0D /* ExamplePlist.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +194,7 @@
 				0A33859715B0D0A2007B702E /* main.m in Sources */,
 				0A33859B15B0D0A2007B702E /* CPAppDelegate.m in Sources */,
 				0A33859E15B0D0A2007B702E /* CPViewController.m in Sources */,
+				0A5B6EA815B321B100B86B0D /* CPDictionaryProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +316,7 @@
 				0A3385A915B0D0A2007B702E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
