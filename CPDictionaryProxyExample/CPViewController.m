@@ -35,18 +35,18 @@
 	// this is the proxy solution
 	{
 		// GETTER
-		NSDictionary* dict = [[NSDictionary alloc] initWithContentsOfFile:fileName];
+		NSMutableDictionary* dict = [[NSMutableDictionary alloc] initWithContentsOfFile:fileName];
 		CPDictionaryProxy* dictProxy = [CPDictionaryProxy newWithDictionary:dict];
 		self.labelNameProxy.text = dictProxy.name;
 		self.labelCompanyProxy.text = dictProxy.company;
 		self.labelAgeProxy.text = dictProxy.age.stringValue;
 		// SETTER
-//		dictProxy.name = @"john doe";
-//		dictProxy.company = @"unknown";
-//		dictProxy.age = [NSNumber numberWithInt:42];
-//		self.labelNameSetProxy.text = dictProxy.name;
-//		self.labelCompanySetProxy.text = dictProxy.company;
-//		self.labelAgeSetProxy.text = dictProxy.age.stringValue;
+		dictProxy.name = @"john doe";
+		dictProxy.company = @"unknown";
+		dictProxy.age = [NSNumber numberWithInt:42];
+		self.labelNameSetProxy.text = dictProxy.name;
+		self.labelCompanySetProxy.text = dictProxy.company;
+		self.labelAgeSetProxy.text = dictProxy.age.stringValue;
 	}
 }
 
