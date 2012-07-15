@@ -14,7 +14,6 @@
 		0A33859715B0D0A2007B702E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A33859615B0D0A2007B702E /* main.m */; };
 		0A33859B15B0D0A2007B702E /* CPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A33859A15B0D0A2007B702E /* CPAppDelegate.m */; };
 		0A33859E15B0D0A2007B702E /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A33859D15B0D0A2007B702E /* CPViewController.m */; };
-		0A3385A115B0D0A2007B702E /* CPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A33859F15B0D0A2007B702E /* CPViewController_iPhone.xib */; };
 		0A3385A415B0D0A2007B702E /* CPViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3385A215B0D0A2007B702E /* CPViewController_iPad.xib */; };
 		0A5B6EA515B3216600B86B0D /* ExamplePlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B6EA415B3216600B86B0D /* ExamplePlist.plist */; };
 		0A5B6EA815B321B100B86B0D /* CPDictionaryProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B6EA715B321B100B86B0D /* CPDictionaryProxy.m */; };
@@ -33,7 +32,6 @@
 		0A33859A15B0D0A2007B702E /* CPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPAppDelegate.m; sourceTree = "<group>"; };
 		0A33859C15B0D0A2007B702E /* CPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPViewController.h; sourceTree = "<group>"; };
 		0A33859D15B0D0A2007B702E /* CPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPViewController.m; sourceTree = "<group>"; };
-		0A3385A015B0D0A2007B702E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPViewController_iPhone.xib; sourceTree = "<group>"; };
 		0A3385A315B0D0A2007B702E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPViewController_iPad.xib; sourceTree = "<group>"; };
 		0A5B6EA415B3216600B86B0D /* ExamplePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExamplePlist.plist; sourceTree = "<group>"; };
 		0A5B6EA615B321B100B86B0D /* CPDictionaryProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDictionaryProxy.h; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 				0A33859A15B0D0A2007B702E /* CPAppDelegate.m */,
 				0A33859C15B0D0A2007B702E /* CPViewController.h */,
 				0A33859D15B0D0A2007B702E /* CPViewController.m */,
-				0A33859F15B0D0A2007B702E /* CPViewController_iPhone.xib */,
 				0A3385A215B0D0A2007B702E /* CPViewController_iPad.xib */,
 				0A33859115B0D0A2007B702E /* Supporting Files */,
 			);
@@ -180,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A33859515B0D0A2007B702E /* InfoPlist.strings in Resources */,
-				0A3385A115B0D0A2007B702E /* CPViewController_iPhone.xib in Resources */,
 				0A3385A415B0D0A2007B702E /* CPViewController_iPad.xib in Resources */,
 				0A5B6EA515B3216600B86B0D /* ExamplePlist.plist in Resources */,
 			);
@@ -209,14 +205,6 @@
 				0A33859415B0D0A2007B702E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0A33859F15B0D0A2007B702E /* CPViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A3385A015B0D0A2007B702E /* en */,
-			);
-			name = CPViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
 		0A3385A215B0D0A2007B702E /* CPViewController_iPad.xib */ = {
@@ -284,6 +272,7 @@
 				GCC_PREFIX_HEADER = "CPDictionaryProxyExample/CPDictionaryProxyExample-Prefix.pch";
 				INFOPLIST_FILE = "CPDictionaryProxyExample/CPDictionaryProxyExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -295,6 +284,7 @@
 				GCC_PREFIX_HEADER = "CPDictionaryProxyExample/CPDictionaryProxyExample-Prefix.pch";
 				INFOPLIST_FILE = "CPDictionaryProxyExample/CPDictionaryProxyExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
