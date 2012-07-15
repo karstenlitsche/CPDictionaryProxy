@@ -4,8 +4,6 @@
 <dict>
 	<key>name</key>
 	<string>karsten</string>
-	<key>city</key>
-	<string>frankfurt</string>
 	<key>company</key>
 	<string>compeople</string>
 	<key>age</key>

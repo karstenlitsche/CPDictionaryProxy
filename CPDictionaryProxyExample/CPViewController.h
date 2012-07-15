@@ -10,4 +10,11 @@
 
 @interface CPViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UILabel* labelName;
+@property (nonatomic, weak) IBOutlet UILabel* labelNameProxy;
+@property (nonatomic, weak) IBOutlet UILabel* labelCompany;
+@property (nonatomic, weak) IBOutlet UILabel* labelCompanyProxy;
+@property (nonatomic, weak) IBOutlet UILabel* labelAge;
+@property (nonatomic, weak) IBOutlet UILabel* labelAgeProxy;
+
 @end
