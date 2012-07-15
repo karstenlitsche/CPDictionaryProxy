@@ -8,5 +8,10 @@
 	<string>compeople</string>
 	<key>age</key>
 	<integer>36</integer>
+	<key>address</key>
+	<dict>
+		<key>country</key>
+		<string>germany</string>
+	</dict>
 </dict>
 </plist>

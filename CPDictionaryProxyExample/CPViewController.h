@@ -10,6 +10,8 @@
 @property (nonatomic, weak) IBOutlet UILabel* labelCompanyProxy;
 @property (nonatomic, weak) IBOutlet UILabel* labelAge;
 @property (nonatomic, weak) IBOutlet UILabel* labelAgeProxy;
+@property (nonatomic, weak) IBOutlet UILabel* labelCountry;
+@property (nonatomic, weak) IBOutlet UILabel* labelCountryProxy;
 
 @property (nonatomic, weak) IBOutlet UILabel* labelNameSet;
 @property (nonatomic, weak) IBOutlet UILabel* labelNameSetProxy;
@@ -17,5 +19,7 @@
 @property (nonatomic, weak) IBOutlet UILabel* labelCompanySetProxy;
 @property (nonatomic, weak) IBOutlet UILabel* labelAgeSet;
 @property (nonatomic, weak) IBOutlet UILabel* labelAgeSetProxy;
+@property (nonatomic, weak) IBOutlet UILabel* labelCountrySet;
+@property (nonatomic, weak) IBOutlet UILabel* labelCountrySetProxy;
 
 @end

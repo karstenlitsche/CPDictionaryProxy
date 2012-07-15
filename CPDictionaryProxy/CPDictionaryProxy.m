@@ -89,6 +89,14 @@
 		[anInvocation setArgument:&selectorString atIndex:2]; // method arguments start at index 2 (self=0 + cmd=1)
 		// execute it
 		[anInvocation invoke];
+		
+		// Special case: A NSDictionary inside -> make a proxy for it
+		void* returnValue;
+		[anInvocation getReturnValue:&returnValue];
+		if ([(__bridge id)returnValue isKindOfClass:[NSDictionary class]]) {
+			void* wrappedReturnValue = (__bridge void*) [self proxyForSelector:calledSelector];
+			[anInvocation setReturnValue:&wrappedReturnValue];
+		}
 	}
 }
 
