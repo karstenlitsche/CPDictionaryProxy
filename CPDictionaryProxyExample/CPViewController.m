@@ -1,13 +1,9 @@
-//
-//  CPViewController.m
-//  CPDictionaryProxyExample
-//
+
 //  Created by Karsten Litsche on 13.07.12.
 //  Copyright (c) 2012 Compeople. All rights reserved.
-//
 
 #import "CPViewController.h"
-#import "CPDictionaryProxy.h"
+#import "CPDictionaryProxy_ExamplePlist.h"
 
 @implementation CPViewController
 
@@ -26,9 +22,9 @@
 
 	// this is the proxy solution
 	CPDictionaryProxy* dictProxy = [CPDictionaryProxy newWithDictionary:dict];
-//	self.labelNameProxy.text = dictProxy.name;
-//	self.labelCompanyProxy.text = dictProxy.company;
-//	self.labelAgeProxy.text = dictProxy.age.stringValue;
+	self.labelNameProxy.text = dictProxy.name;
+	self.labelCompanyProxy.text = dictProxy.company;
+	self.labelAgeProxy.text = dictProxy.age.stringValue;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

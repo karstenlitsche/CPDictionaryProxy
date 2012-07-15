@@ -38,6 +38,7 @@
 		0A5B6EA415B3216600B86B0D /* ExamplePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExamplePlist.plist; sourceTree = "<group>"; };
 		0A5B6EA615B321B100B86B0D /* CPDictionaryProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDictionaryProxy.h; sourceTree = "<group>"; };
 		0A5B6EA715B321B100B86B0D /* CPDictionaryProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDictionaryProxy.m; sourceTree = "<group>"; };
+		0A5B6EA915B337CF00B86B0D /* CPDictionaryProxy_ExamplePlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDictionaryProxy_ExamplePlist.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				0A5B6EA415B3216600B86B0D /* ExamplePlist.plist */,
+				0A5B6EA915B337CF00B86B0D /* CPDictionaryProxy_ExamplePlist.h */,
 			);
 			path = CPExamplePlist;
 			sourceTree = "<group>";

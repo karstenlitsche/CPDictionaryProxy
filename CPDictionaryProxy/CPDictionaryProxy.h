@@ -2,8 +2,6 @@
 //  Created by Karsten Litsche on 15.07.12.
 //  Copyright (c) 2012 Compeople. All rights reserved.
 
-#import <Foundation/Foundation.h>
-
 /** 
  A CPDictionaryProxy wraps a given NSDictionary so you can use it as a normal object with properties.
  Instead of [dict objectForKey:@"key"] you can call 'dictProxy.key'!

@@ -1,13 +1,8 @@
-//
-//  CPAppDelegate.m
-//  CPDictionaryProxyExample
-//
+
 //  Created by Karsten Litsche on 13.07.12.
 //  Copyright (c) 2012 Compeople. All rights reserved.
-//
 
 #import "CPAppDelegate.h"
-
 #import "CPViewController.h"
 
 @implementation CPAppDelegate
