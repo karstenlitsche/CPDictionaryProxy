@@ -22,11 +22,7 @@
 
 - (id) initWithDictionary:(NSDictionary*)dict {
 	if (self) {
-		if ([dict isKindOfClass:[NSMutableDictionary class]]) {
-			self.wrapperDict = (id)dict;	
-		} else {
-			self.wrapperDict = [[NSMutableDictionary alloc] initWithDictionary:dict];
-		}
+		self.wrapperDict = [[NSMutableDictionary alloc] initWithDictionary:dict];
 	}
 	return self;
 }
