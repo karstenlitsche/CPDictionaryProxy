@@ -68,7 +68,12 @@
             // Reconstruct invocation Step 2: change the method name to setObject:forKey:
 			[anInvocation setSelector:@selector(setObject:forKey:)];
             // Reconstruct invocation Step 3: set key as first param
-            [anInvocation setArgument:&value atIndex:2];
+            if ([(__bridge id)value isProxy]) {
+                NSDictionary* innerDictionary = [(__bridge id)(value) wrapperDict];
+                [anInvocation setArgument:&innerDictionary atIndex:2];
+            } else {
+                [anInvocation setArgument:&value atIndex:2];
+            }
             // Reconstruct invocation Step 4: set key as second param
             [anInvocation setArgument:&key atIndex:3];
         } else {
